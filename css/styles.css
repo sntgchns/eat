@@ -20,7 +20,7 @@ section
 {
     max-width: 50vw;
     min-width: 50vw;
-    padding: 0 0 40px 0;
+    padding: 0 40px 40px;
     border-radius: 15px;
     background: chocolate;
     border: 1px solid darkorange;
