@@ -1,7 +1,7 @@
 function getRecipes() {
     let ingredients = document.getElementById("ingredients").value;
-    fetch("ai.soñora.com/clear_text");
-    fetch("ai.soñora.com/recipes", {
+    fetch("https://ai.xn--soora-pta.com/clear_text");
+    fetch("https://ai.xn--soora-pta.com/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
