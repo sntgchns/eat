@@ -20,13 +20,15 @@ section
 {
     max-width: 50vw;
     min-width: 50vw;
-    padding: 0 60px 40px 60px;
+    padding: 0 0 40px 0;
     border-radius: 15px;
     background: chocolate;
+    border: 1px solid darkorange;
 }
 section h1
 {
     text-align: center;
+    margin: 20px 0 30px;
 }
 section .inputs
 {
@@ -44,11 +46,42 @@ section .inputs input
 }
 section .inputs input#ingredients
 {
-    min-width: 50%
+    min-width: 50%;
+}
+section .inputs input#ingredients:hover,
+section .inputs input#ingredients:focus
+
+{
+    outline: 1px solid black;
 }
 section .inputs input[type="submit"]
 {
     padding: 10px 30px;
+}
+section .inputs input[type="submit"]:hover
+{
+    filter: contrast(0.9);
+}
+section .inputs .material-icons-outlined
+{
+    display: none;
+    color: sandybrown;
+    animation: in-out 1s linear infinite;
+}
+@keyframes in-out
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
 section ul .elementHide code
 {
@@ -64,4 +97,20 @@ section ul .elementHide code
     scrollbar-width: none;
     white-space: pre-wrap;
     width: -webkit-fill-available;
+}
+@media (max-width: 500px)
+{
+    section
+    {
+        padding: 0 60px 40px 60px;
+        min-height: 220px;
+    }
+    section .inputs
+    {
+        flex-direction: column;
+    }
+    section .inputs input#ingredients
+    {
+        min-width: 100%;
+    }
 }

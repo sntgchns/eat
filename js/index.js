@@ -1,5 +1,9 @@
 function getRecipes() {
     let ingredients = document.getElementById("ingredients").value;
+    document.querySelector('section .inputs input[type="submit"]').value = "Buscando...";
+    document.querySelector('section .inputs input[type="submit"]').disabled = true;
+    document.querySelector('section .inputs .material-icons-outlined').style.display = "block";
+    document.querySelector('section .inputs .material-icons-outlined').style.animation = "in-out 1s linear infinite";
     fetch("https://ai.xn--soora-pta.com/clear_text");
     fetch("https://ai.xn--soora-pta.com/recipes", {
             method: "POST",
@@ -13,6 +17,10 @@ function getRecipes() {
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        document.querySelector('section .inputs input[type="submit"]').disabled = false;
+        document.querySelector('section .inputs .material-icons-outlined').style.display = "none";
+        document.querySelector('section .inputs .material-icons-outlined').style.animation = "none";
+        document.querySelector('section .inputs input[type="submit"]').value = "Más recetas";
         const section = document.createElement('section');
         const h1 = document.createElement('h1');
         const ul = document.createElement('ul');
@@ -27,9 +35,12 @@ function getRecipes() {
         section.appendChild(h1);
         section.appendChild(ul);
         document.getElementsByTagName('body')[0].appendChild(section);
-        document.querySelector('section .inputs input[type="submit"]').value = "Más recetas";
         })
     .catch(error => {
         console.log(error);
+        document.querySelector('section .inputs input[type="submit"]').disabled = false;
+        document.querySelector('section .inputs .material-icons-outlined').style.display = "none";
+        document.querySelector('section .inputs .material-icons-outlined').style.animation = "none";
+        document.querySelector('section .inputs input[type="submit"]').value = "Volver a intentar";
         });
     }
