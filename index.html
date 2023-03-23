@@ -7,7 +7,6 @@
     <title>Eat</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" crossorigin="anonymous">
-    <script src="js/index.js"></script>
     <link rel="shortcut icon" href="img/cooking.png" type="image/x-icon">
 </head>
 <body>
@@ -15,9 +14,10 @@
         <h1>¿Qué ingredientes tienes disponibles?</h1>
         <div class="inputs">
             <input id="ingredients" type="text" name="ingredients" placeholder="Ej: tomate, cebolla, pimiento, etc.">
-            <input type="submit" value="Obtener recetas" onclick="getRecipes();">
+            <input id="sendInput" type="submit" value="Obtener recetas" onclick="getRecipes();">
             <span class="material-icons-outlined">blender</span>
         </div>
     </section>
 </body>
+<script src="js/index.js"></script>
 </html>

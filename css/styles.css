@@ -55,16 +55,16 @@ section .inputs input#ingredients:focus
 {
     outline: 1px solid black;
 }
-section .inputs input[type="submit"]
+section .inputs input#sendInput
 {
     padding: 10px 30px;
     min-width: 160px;
 }
-section .inputs input[type="submit"]:hover
+section .inputs input#sendInput:hover
 {
     filter: contrast(0.9);
 }
-section .inputs input[type="submit"]:active
+section .inputs input#sendInput:active
 {
     filter: contrast(0.8);
 }

@@ -44,3 +44,12 @@ function getRecipes() {
         document.querySelector('section .inputs input[type="submit"]').value = "Volver a intentar";
         });
     }
+
+const inputIngredients = document.getElementById("ingredients");
+const buttonIngredients = document.getElementById("sendInput");
+
+inputIngredients.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        buttonIngredients.click();
+        }
+    });
