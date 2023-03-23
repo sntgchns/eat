@@ -1,0 +1,62 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: brown;
+}
+section
+{
+    max-width: 50vw;
+    min-width: 50vw;
+    padding: 0 60px 40px 60px;
+    border-radius: 15px;
+    background: chocolate;
+}
+section h1
+{
+    text-align: center;
+}
+section .inputs
+{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+section .inputs input
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+section .inputs input#ingredients
+{
+    min-width: 50%
+}
+section .inputs input[type="submit"]
+{
+    padding: 10px 30px;
+}
+section ul .elementHide code
+{
+    display: flex;
+    text-align: justify;
+    text-indent: -35px;
+    padding: 5px 25px 5px 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 5px;
+    overflow: overlay;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    white-space: pre-wrap;
+    width: -webkit-fill-available;
+}
