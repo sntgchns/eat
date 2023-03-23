@@ -16,7 +16,6 @@ function getRecipes() {
             })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         document.querySelector('section .inputs input[type="submit"]').disabled = false;
         document.querySelector('section .inputs .material-icons-outlined').style.opacity = '0';
         document.querySelector('section .inputs .material-icons-outlined').style.animation = "none";
