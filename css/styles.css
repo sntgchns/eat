@@ -63,6 +63,10 @@ section .inputs input[type="submit"]:hover
 {
     filter: contrast(0.9);
 }
+section .inputs input[type="submit"]:active
+{
+    filter: contrast(0.8);
+}
 section .inputs .material-icons-outlined
 {
     opacity: 0;
