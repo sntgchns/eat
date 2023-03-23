@@ -57,6 +57,7 @@ section .inputs input#ingredients:focus
 section .inputs input[type="submit"]
 {
     padding: 10px 30px;
+    min-width: 160px;
 }
 section .inputs input[type="submit"]:hover
 {
@@ -64,7 +65,7 @@ section .inputs input[type="submit"]:hover
 }
 section .inputs .material-icons-outlined
 {
-    display: none;
+    opacity: 0;
     color: sandybrown;
     animation: in-out 1s linear infinite;
 }
