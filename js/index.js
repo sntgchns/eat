@@ -24,7 +24,7 @@ function getRecipes() {
         const h1 = document.createElement('h1');
         const ul = document.createElement('ul');
         ul.classList.add('receivedData');
-        h1.textContent = "Estas son las recetas que puedes hacer con los ingredientes que tienes disponibles";
+        h1.textContent = "Estas son las recetas que puedes hacer con tus ingredientes:";
         const innerDiv = document.createElement('div');
         innerDiv.classList.add('elementHide');
         const code = document.createElement('code');
