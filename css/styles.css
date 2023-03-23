@@ -24,6 +24,7 @@ section
     border-radius: 15px;
     background: chocolate;
     border: 1px solid darkorange;
+    box-shadow: 0 0 10px 5px coral;
 }
 section h1
 {
