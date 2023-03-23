@@ -89,6 +89,10 @@ section .inputs .material-icons-outlined
         transform: scale(1);
     }
 }
+section .receivedData
+{
+    padding: 0;
+}
 section ul .elementHide code
 {
     display: flex;
@@ -115,10 +119,6 @@ section ul .elementHide code
         max-width: 350px;
         padding: 5px 10px;
         min-height: 220px;
-    }
-    section .receivedData
-    {
-        padding: 0;
     }
     section .inputs
     {
