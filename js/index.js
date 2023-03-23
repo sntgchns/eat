@@ -1,6 +1,6 @@
 function getRecipes() {
     let ingredients = document.getElementById("ingredients").value;
-    document.querySelector('section .inputs input[type="submit"]').value = "Buscando...";
+    document.querySelector('section .inputs input[type="submit"]').value = "Generando...";
     document.querySelector('section .inputs input[type="submit"]').disabled = true;
     document.querySelector('section .inputs .material-icons-outlined').style.opacity = '1';
     document.querySelector('section .inputs .material-icons-outlined').style.animation = "in-out 1s linear infinite";
