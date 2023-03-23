@@ -24,7 +24,7 @@ function getRecipes() {
         const h1 = document.createElement('h1');
         const ul = document.createElement('ul');
         ul.classList.add('receivedData');
-        h1.textContent = "¿Puedes preparar algo rico con estos ingredientes?";
+        h1.textContent = "¿Qué puedes preparar con estos ingredientes?";
         const innerDiv = document.createElement('div');
         innerDiv.classList.add('elementHide');
         const code = document.createElement('code');
