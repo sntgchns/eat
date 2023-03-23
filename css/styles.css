@@ -104,12 +104,21 @@ section ul .elementHide code
     white-space: pre-wrap;
     width: -webkit-fill-available;
 }
-@media (max-width: 500px)
+@media (max-width: 976px)
 {
+    body
+    {
+        margin: 20px 0;
+    }
     section
     {
-        padding: 0 60px 40px 60px;
+        max-width: 350px;
+        padding: 5px 10px;
         min-height: 220px;
+    }
+    section .receivedData
+    {
+        padding: 0;
     }
     section .inputs
     {
@@ -117,6 +126,6 @@ section ul .elementHide code
     }
     section .inputs input#ingredients
     {
-        min-width: 100%;
+        min-width: 80%;
     }
 }
