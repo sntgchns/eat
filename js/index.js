@@ -5,7 +5,7 @@ function getRecipes() {
     document.querySelector('section .inputs .material-icons-outlined').style.opacity = '1';
     document.querySelector('section .inputs .material-icons-outlined').style.animation = "in-out 1s linear infinite";
     fetch("https://ai.xn--soora-pta.com/clear_text");
-    fetch("https://ai.xn--soora-pta.com/recipes_llama_groq", {
+    fetch("https://ai.xn--soora-pta.com/recipes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
